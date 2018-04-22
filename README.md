@@ -220,3 +220,4 @@ h2 {
 
 ```
 
+Mijn eindproduct is te zien in het mapje opdracht 3.
