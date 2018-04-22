@@ -140,6 +140,64 @@ Hier zie je dat de code redelijk kort is en erg eenvoudig is gehouden. Voorheen 
 De laatste stap die ik gemaakt heb is css toevoegen. Ik heb doormiddel van keyframes een aantal animaties gemaakt. Dit heb ik doormiddel van deze code gedaan:
 
 ```
+.showing {
+    opacity: 1;
+    z-index: 2;
+    animation: stretch 0.5s ease-out 0s alternate 1 none running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+```
+
+```
+
+.controls {
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    border: 0;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 0;
+    margin-top: 100%;
+    z-index: 3;
+    position: absolute;
+    animation: colorSwitch 6s infinite;
+}
+
+@keyframes colorSwitch {
+    0% {
+        color: rgba(255, 255, 255);
+    }
+    20% {
+        color: rgba(255, 0, 0);
+    }
+    40% {
+        color: rgba(255, 153, 51);
+    }
+    60% {
+        color: rgba(51, 204, 255);
+    }
+    80% {
+        color: rgba(153, 204, 255);
+    }
+    100% {
+        color: rgba(255, 102, 153);
+    }
+}
+
+```
+
+```
 h2 {
     position: relative;
     margin-top: -160%;
