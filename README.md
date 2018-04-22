@@ -6,6 +6,7 @@ Doormiddel van een film API heb ik een carousel gemaakt. In deze carousel zit ee
 
 Eerst heb ik een schets gemaakt van hoe de website in elkaar zou moeten zitten.
 
-![Cover]https://github.com/Renzovds/frontendfordesigners/blob/master/cover%20frontend.PNG?raw=true
+![Alt text](relative/path/to/cover%20frontend.PNG?raw=true "Title")
+
 
 Deze schets heeft mij geholpen om de juiste html elementen aan te maken in mijn javascript.
