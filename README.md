@@ -135,4 +135,30 @@ function makeSlider() {
 }
 ```
 
+Hier zie je dat de code redelijk kort is en erg eenvoudig is gehouden. Voorheen had ik veelste complexe code waardoor ik het zelf allemaal niet meer begreep.
+
+De laatste stap die ik gemaakt heb is css toevoegen. Ik heb doormiddel van keyframes een aantal animaties gemaakt. Dit heb ik doormiddel van deze code gedaan:
+
+```
+h2 {
+    position: relative;
+    margin-top: -160%;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 32px!important;
+    animation: rotation 1s linear 1;
+    
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+```
 
