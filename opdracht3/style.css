@@ -33,6 +33,12 @@ img {
     transition: opacity 1s;
 }
 
+.showing {
+    opacity: 1;
+    z-index: 2;
+    animation: stretch 0.5s ease-out 0s alternate 1 none running;
+}
+
 @keyframes stretch {
     0% {
         transform: scale(.7);
@@ -42,11 +48,6 @@ img {
     }
 }
 
-.showing {
-    opacity: 1;
-    z-index: 2;
-    animation: stretch 0.5s ease-out 0s alternate 1 none running;
-}
 
 .controls {
     border-radius: 50%;
@@ -62,6 +63,28 @@ img {
     position: absolute;
     animation: colorSwitch 6s infinite;
 }
+
+@keyframes colorSwitch {
+    0% {
+        color: rgba(255, 255, 255);
+    }
+    20% {
+        color: rgba(255, 0, 0);
+    }
+    40% {
+        color: rgba(255, 153, 51);
+    }
+    60% {
+        color: rgba(51, 204, 255);
+    }
+    80% {
+        color: rgba(153, 204, 255);
+    }
+    100% {
+        color: rgba(255, 102, 153);
+    }
+}
+
 
 .left {
     float: left;
@@ -85,7 +108,15 @@ h2 {
     font-size: 30px;
     margin-bottom: 32px!important;
     animation: rotation 1s linear 1;
-    ;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 p {
@@ -99,32 +130,4 @@ p {
     margin-top: 64px;
 }
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
-}
 
-@keyframes colorSwitch {
-    0% {
-        color: rgba(255, 255, 255);
-    }
-    20% {
-        color: rgba(255, 0, 0);
-    }
-    40% {
-        color: rgba(255, 153, 51);
-    }
-    60% {
-        color: rgba(51, 204, 255);
-    }
-    80% {
-        color: rgba(153, 204, 255);
-    }
-    100% {
-        color: rgba(255, 102, 153);
-    }
-}
