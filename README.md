@@ -11,6 +11,6 @@ Eerst heb ik een schets gemaakt van hoe de website in elkaar zou moeten zitten.
 
 Deze schets heeft mij geholpen om de juiste html elementen aan te maken in mijn javascript.
 
-![Screenshot](cover%20frontend.jpeg?raw=true)
+![Screenshot](cover%20frontend.PNG?raw=true)
 
 Hier is te zien dat ik mijn schets precies aangehouden heb.
