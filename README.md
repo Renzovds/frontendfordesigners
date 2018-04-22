@@ -24,7 +24,7 @@ function getUserQuery() {
 
 
         } else {
-            console.log("an error occured");
+            console.log("Ooops het is niet gelukt.");
         }
     };
     xhr.send();
