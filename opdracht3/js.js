@@ -25,28 +25,30 @@ function getUserQuery() {
 getUserQuery();
 
 function showMovies(movies) {
-    var slider = document.querySelector('#movies');
+    var slider = document.querySelector('#slides');
     for (var i = 0; i < movies.length; i++) {
 
         var myArticle = document.createElement('article');
-        var myDiv = document.createElement('div');
         var myH2 = document.createElement('h2');
         var myP = document.createElement('p');
-
+        var myPhoto = document.createElement('img');
 
 
         myP.textContent = movies[i].simple_plot;
         myH2.textContent = movies[i].title;
-        myDiv.appendChild(myH2);
-        myDiv.appendChild(myP);
-        myDiv.classList.add('slide-content');
-        var bgImage = 'background-image: url(' + movies[i].cover + ')';
-        myArticle.setAttribute('style', bgImage);
+        myPhoto.src = movies[i].cover;
+        myArticle.appendChild(myPhoto);
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myP);
         myArticle.classList.add('slide');
-        myArticle.appendChild(myDiv);
 
         slider.appendChild(myArticle);
-
-        createSlider();
     }
+
+    var firstSlide = document.querySelector('#slides article');
+    firstSlide.classList.add('showing');
+
+    makeSlider();
+
+
 }
